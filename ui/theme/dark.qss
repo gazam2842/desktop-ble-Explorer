@@ -1,0 +1,103 @@
+/* Dark engineering theme — default */
+QWidget {
+    background-color: #16191e;
+    color: #cfd6df;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+QMainWindow, QDialog { background-color: #16191e; }
+
+/* ---- Tabs ---- */
+QTabWidget::pane { border: 1px solid #2c333d; border-radius: 6px; top: -1px; }
+QTabBar::tab {
+    background: #1f242b; color: #8d99a8;
+    padding: 7px 16px; margin-right: 2px;
+    border-top-left-radius: 6px; border-top-right-radius: 6px;
+}
+QTabBar::tab:selected { background: #2b3340; color: #cfd6df; }
+QTabBar::tab:hover:!selected { background: #252b33; }
+
+/* ---- Buttons ---- */
+QPushButton {
+    background: #2b3340; color: #8fc1ec;
+    border: 1px solid #3a4250; border-radius: 5px;
+    padding: 5px 14px;
+}
+QPushButton:hover { background: #333c4b; }
+QPushButton:pressed { background: #3a4456; }
+QPushButton:checked { background: #2f6db3; color: #ffffff; border-color: #2f6db3; }
+QPushButton:disabled { color: #56606d; background: #20252c; border-color: #2a303a; }
+
+/* ---- Inputs ---- */
+QLineEdit, QComboBox, QPlainTextEdit, QListWidget {
+    background: #1d2229; color: #cfd6df;
+    border: 1px solid #2c333d; border-radius: 5px;
+    padding: 4px 8px;
+    selection-background-color: #2f6db3;
+}
+QLineEdit:read-only { background: #171b20; color: #93ce77; }
+QComboBox::drop-down { border: none; width: 18px; }
+QComboBox QAbstractItemView { background: #1f242b; border: 1px solid #2c333d; }
+
+/* ---- Table (device list) ---- */
+QTableWidget {
+    background: #1a1f25; gridline-color: #242a32;
+    border: 1px solid #2c333d; border-radius: 6px;
+}
+QTableWidget::item { padding: 4px; }
+QTableWidget::item:selected { background: #2f6db3; color: #ffffff; }
+QHeaderView::section {
+    background: #1f242b; color: #8d99a8;
+    border: none; border-bottom: 1px solid #2c333d; padding: 5px;
+}
+QTableCornerButton::section { background: #1f242b; border: none; }
+
+/* ---- Scrollbar ---- */
+QScrollBar:vertical { background: #16191e; width: 10px; }
+QScrollBar::handle:vertical { background: #333c4b; border-radius: 5px; min-height: 30px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0; width: 0; }
+QScrollBar:horizontal { background: #16191e; height: 10px; }
+QScrollBar::handle:horizontal { background: #333c4b; border-radius: 5px; min-width: 30px; }
+
+/* ---- Splitter / status bar ---- */
+QSplitter::handle { background: #242a32; }
+QStatusBar { background: #1f242b; color: #8d99a8; }
+QToolBar { background: #1f242b; border: none; spacing: 6px; padding: 4px; }
+
+/* ---- GATT cards ---- */
+QFrame#ServiceCard {
+    background: #1f242b; border: 1px solid #2c333d; border-radius: 8px;
+}
+QWidget#ServiceCardHeader { background: transparent; }
+QLabel#ServiceName { color: #62b0e8; font-weight: 600; font-size: 14px; background: transparent; }
+QLabel#UuidLabel { color: #6b7686; font-size: 11px; font-family: Consolas, monospace; background: transparent; }
+QFrame#CharRow { background: transparent; border: none; border-top: 1px solid #242a32; }
+QFrame#CharRow[expanded="true"] { background: #232932; }
+QLabel#CharName { font-weight: 500; background: transparent; }
+QLabel#PropChip {
+    background: #2b3340; color: #9fb2c8;
+    border-radius: 9px; padding: 1px 8px; font-size: 10px;
+}
+QLabel#ValueLabel {
+    color: #93ce77; font-family: Consolas, monospace; font-size: 12px;
+    background: #171b20; border-radius: 4px; padding: 2px 8px;
+}
+QPushButton#NotifyToggle {
+    padding: 0; font-size: 12px; border-radius: 11px;
+    background: #2b3340; color: #8fc1ec; border: 1px solid #3a4250;
+}
+QPushButton#NotifyToggle:checked { background: #2f6db3; color: #ffffff; border-color: #2f6db3; }
+
+/* ---- Device tab header ---- */
+QLabel#DeviceTitle { font-size: 16px; font-weight: 600; color: #cfd6df; background: transparent; }
+QLabel#DeviceStatus { color: #8d99a8; background: transparent; }
+QLabel#DeviceStatus[state="connected"] { color: #8fd19a; }
+QLabel#DeviceStatus[state="disconnected"] { color: #e08f8f; }
+
+/* ---- Advertisement detail ---- */
+QFrame#AdvPanel { background: #1f242b; border: 1px solid #2c333d; border-radius: 8px; }
+QFrame#AdvSection { background: #1f242b; border: 1px solid #2c333d; border-radius: 8px; }
+QWidget#AdvSectionHeader { background: transparent; }
+QLabel#AdvSectionTitle { color: #62b0e8; font-weight: 600; background: transparent; }
+QLabel#AdvFieldName { color: #8d99a8; font-size: 11px; background: transparent; }
+QLabel#AdvFieldValue { font-family: Consolas, monospace; font-size: 12px; background: transparent; }

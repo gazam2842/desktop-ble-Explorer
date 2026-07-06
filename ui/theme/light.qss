@@ -1,0 +1,94 @@
+/* Light theme */
+QWidget {
+    background-color: #f7f9fb;
+    color: #333a42;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+QMainWindow, QDialog { background-color: #f7f9fb; }
+
+QTabWidget::pane { border: 1px solid #dde3ea; border-radius: 6px; top: -1px; }
+QTabBar::tab {
+    background: #e9eef3; color: #6a7686;
+    padding: 7px 16px; margin-right: 2px;
+    border-top-left-radius: 6px; border-top-right-radius: 6px;
+}
+QTabBar::tab:selected { background: #ffffff; color: #333a42; }
+QTabBar::tab:hover:!selected { background: #eff3f7; }
+
+QPushButton {
+    background: #ffffff; color: #0a6ebd;
+    border: 1px solid #c9d4df; border-radius: 5px;
+    padding: 5px 14px;
+}
+QPushButton:hover { background: #f0f5fa; }
+QPushButton:pressed { background: #e3ecf5; }
+QPushButton:checked { background: #0a6ebd; color: #ffffff; border-color: #0a6ebd; }
+QPushButton:disabled { color: #a8b2bd; background: #eef1f5; border-color: #e2e8ef; }
+
+QLineEdit, QComboBox, QPlainTextEdit, QListWidget {
+    background: #ffffff; color: #333a42;
+    border: 1px solid #d4dce4; border-radius: 5px;
+    padding: 4px 8px;
+    selection-background-color: #0a6ebd;
+}
+QLineEdit:read-only { background: #f1f7f1; color: #256b2f; }
+QComboBox::drop-down { border: none; width: 18px; }
+QComboBox QAbstractItemView { background: #ffffff; border: 1px solid #d4dce4; }
+
+QTableWidget {
+    background: #ffffff; gridline-color: #eef2f6;
+    border: 1px solid #dde3ea; border-radius: 6px;
+}
+QTableWidget::item { padding: 4px; }
+QTableWidget::item:selected { background: #0a6ebd; color: #ffffff; }
+QHeaderView::section {
+    background: #f0f4f8; color: #6a7686;
+    border: none; border-bottom: 1px solid #dde3ea; padding: 5px;
+}
+QTableCornerButton::section { background: #f0f4f8; border: none; }
+
+QScrollBar:vertical { background: #f7f9fb; width: 10px; }
+QScrollBar::handle:vertical { background: #c9d4df; border-radius: 5px; min-height: 30px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0; width: 0; }
+QScrollBar:horizontal { background: #f7f9fb; height: 10px; }
+QScrollBar::handle:horizontal { background: #c9d4df; border-radius: 5px; min-width: 30px; }
+
+QSplitter::handle { background: #e2e8ef; }
+QStatusBar { background: #eef2f6; color: #6a7686; }
+QToolBar { background: #eef2f6; border: none; spacing: 6px; padding: 4px; }
+
+QFrame#ServiceCard {
+    background: #ffffff; border: 1px solid #e2e8ef; border-radius: 8px;
+}
+QWidget#ServiceCardHeader { background: transparent; }
+QLabel#ServiceName { color: #0a6ebd; font-weight: 600; font-size: 14px; background: transparent; }
+QLabel#UuidLabel { color: #94a0ad; font-size: 11px; font-family: Consolas, monospace; background: transparent; }
+QFrame#CharRow { background: transparent; border: none; border-top: 1px solid #f0f3f7; }
+QFrame#CharRow[expanded="true"] { background: #f2f6fa; }
+QLabel#CharName { font-weight: 500; background: transparent; }
+QLabel#PropChip {
+    background: #e9eff5; color: #54637a;
+    border-radius: 9px; padding: 1px 8px; font-size: 10px;
+}
+QLabel#ValueLabel {
+    color: #256b2f; font-family: Consolas, monospace; font-size: 12px;
+    background: #f1f7f1; border-radius: 4px; padding: 2px 8px;
+}
+QPushButton#NotifyToggle {
+    padding: 0; font-size: 12px; border-radius: 11px;
+    background: #ffffff; color: #0a6ebd; border: 1px solid #c9d4df;
+}
+QPushButton#NotifyToggle:checked { background: #0a6ebd; color: #ffffff; border-color: #0a6ebd; }
+
+QLabel#DeviceTitle { font-size: 16px; font-weight: 600; color: #333a42; background: transparent; }
+QLabel#DeviceStatus { color: #6a7686; background: transparent; }
+QLabel#DeviceStatus[state="connected"] { color: #2c7a3c; }
+QLabel#DeviceStatus[state="disconnected"] { color: #b04545; }
+
+QFrame#AdvPanel { background: #ffffff; border: 1px solid #e2e8ef; border-radius: 8px; }
+QFrame#AdvSection { background: #ffffff; border: 1px solid #e2e8ef; border-radius: 8px; }
+QWidget#AdvSectionHeader { background: transparent; }
+QLabel#AdvSectionTitle { color: #0a6ebd; font-weight: 600; background: transparent; }
+QLabel#AdvFieldName { color: #6a7686; font-size: 11px; background: transparent; }
+QLabel#AdvFieldValue { font-family: Consolas, monospace; font-size: 12px; background: transparent; }

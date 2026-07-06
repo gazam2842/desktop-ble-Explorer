@@ -1,0 +1,23 @@
+# Claude Code personal settings (not committed)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+!ble_explorer.spec
+
+# User UUID aliases (local settings)
+uuid_aliases.json
+
+# Brainstorming artifacts
+.superpowers/
